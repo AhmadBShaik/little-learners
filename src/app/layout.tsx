@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { raleway } from "@/fonts";
+import Header from "@/components/organisms/Header";
+import { cn } from "@/helpers/utils";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body
+        className={cn(raleway.className, "relative min-h-dvh bg-primary-97")}
+      >
+        <Header />
+        <main className="relative flex flex-col">{children}</main>
+        {/* Footer */}
+      </body>
     </html>
   );
 }

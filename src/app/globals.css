@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+* {
+  --mobile-width: 390px;
+  --laptop-width: 1440px;
+  --desktop-width: 1920px;
+}
