@@ -5,14 +5,14 @@ import React from "react";
 
 function LandingPageTemplate() {
   return (
-    <main className="w-full">
-      <Container>
+    <Container>
+      <main className="w-full">
         <div className="pb mt-[50px] space-y-[80px] pb-[80px] laptop:mt-[60px] laptop:space-y-[150px] laptop:pb-[150px] desktop:mt-[80px] desktop:space-y-[200px] desktop:pb-[200px]">
           <Hero />
           <Benefits />
         </div>
-      </Container>
-    </main>
+      </main>
+    </Container>
   );
 }
 
