@@ -1,5 +1,6 @@
 import Container from "@/components/atoms/Container";
 import Benefits from "@/components/organisms/Benefits";
+import Testimonials from "@/components/organisms/Testimonials";
 import Hero from "@/components/organisms/Hero";
 import React from "react";
 
@@ -10,6 +11,7 @@ function LandingPageTemplate() {
         <div className="pb mt-[50px] space-y-[80px] pb-[80px] laptop:mt-[60px] laptop:space-y-[150px] laptop:pb-[150px] desktop:mt-[80px] desktop:space-y-[200px] desktop:pb-[200px]">
           <Hero />
           <Benefits />
+          <Testimonials />
         </div>
       </main>
     </Container>

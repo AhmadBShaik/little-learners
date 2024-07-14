@@ -5,3 +5,6 @@ export * from "./FaceMask";
 export * from "./Flag";
 export * from "./Lifebuoy";
 export * from "./Users";
+export * from "./ArrowLeft";
+export * from "./ArrowRight";
+export * from "./Star";
