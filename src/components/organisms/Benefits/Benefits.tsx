@@ -1,4 +1,5 @@
 import Grid from "@/components/atoms/Grid";
+import Card from "@/components/molecules/Card";
 import Section from "@/components/molecules/Section";
 import { AcademicCap, Crown, Flag, Lifebuoy, Users } from "@/icons";
 import FaceMask from "@/icons/FaceMask/FaceMask";
@@ -51,11 +52,7 @@ function Benefits() {
     >
       <Grid className="w-full gap-[40px] laptop:grid-cols-3 desktop:gap-y-[50px]">
         {benefits.map((benefit) => (
-          // Todo: Extract this as a card
-          <div
-            className="relative rounded-xl border-2 border-black bg-white px-[30px] py-[50px] laptop:px-[40px] laptop:py-[60px] desktop:px-[50px] desktop:py-[80px]"
-            key={benefit.title}
-          >
+          <Card key={benefit.title}>
             <div className="absolute -top-[28px] left-[24px] flex size-14 items-center justify-center rounded-lg border-2 border-black bg-primary-90 desktop:-top-[35px] desktop:left-[30px] desktop:size-[74px] desktop:rounded-xl">
               <div className="size-[24px] desktop:size-[34px]">
                 {benefit.icon}
@@ -64,8 +61,8 @@ function Benefits() {
             <div className="pb-4 text-[22px] font-bold laptop:text-[24px] desktop:pb-5 desktop:text-[28px]">
               {benefit.title}
             </div>
-            <div>{benefit.description}</div>
-          </div>
+            <div className="desktop:text-[20px]">{benefit.description}</div>
+          </Card>
         ))}
       </Grid>
     </Section>
