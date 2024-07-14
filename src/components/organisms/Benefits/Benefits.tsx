@@ -1,8 +1,7 @@
 import Grid from "@/components/atoms/Grid";
 import Card from "@/components/molecules/Card";
 import Section from "@/components/molecules/Section";
-import { AcademicCap, Crown, Flag, Lifebuoy, Users } from "@/icons";
-import FaceMask from "@/icons/FaceMask/FaceMask";
+import { AcademicCap, Crown, FaceMask, Flag, Lifebuoy, Users } from "@/icons";
 import React from "react";
 
 function Benefits() {

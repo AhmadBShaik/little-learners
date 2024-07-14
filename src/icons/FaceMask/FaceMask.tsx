@@ -1,6 +1,6 @@
 import React from "react";
 
-function FaceMask() {
+export function FaceMask() {
   return (
     <svg
       width="100%"
@@ -16,5 +16,3 @@ function FaceMask() {
     </svg>
   );
 }
-
-export default FaceMask;
