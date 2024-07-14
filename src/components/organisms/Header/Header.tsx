@@ -11,7 +11,7 @@ function Header() {
 
       <div
         className={cn(
-          "sticky left-0 right-0 top-0 z-10 mt-3.5 bg-primary-97 pt-2",
+          "sticky left-0 right-0 top-0 z-40 mt-3.5 bg-primary-97 pt-2",
         )}
       >
         <Navbar />

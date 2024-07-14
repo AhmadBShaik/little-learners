@@ -1,16 +1,13 @@
-import React from "react";
-import Container from "../Container";
 import { cn } from "@/helpers/utils";
-import { outfit } from "@/fonts";
 import Image from "next/image";
 import Link from "next/link";
+import Container from "../Container";
 
 function HeaderPromotion() {
   return (
     <Container large>
       <div
         className={cn(
-          outfit.className,
           "sticky mt-10 overflow-hidden rounded-xl border-2 border-secondary-15 text-sm font-medium laptop:mt-4 laptop:text-base desktop:top-[18px] desktop:text-xl",
         )}
       >
