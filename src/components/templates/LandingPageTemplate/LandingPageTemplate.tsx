@@ -1,8 +1,8 @@
 import Container from "@/components/atoms/Container";
 import Benefits from "@/components/organisms/Benefits";
-import Testimonials from "@/components/organisms/Testimonials";
+import FAQs from "@/components/organisms/FAQs";
 import Hero from "@/components/organisms/Hero";
-import React from "react";
+import Testimonials from "@/components/organisms/Testimonials";
 
 function LandingPageTemplate() {
   return (
@@ -12,6 +12,7 @@ function LandingPageTemplate() {
           <Hero />
           <Benefits />
           <Testimonials />
+          <FAQs />
         </div>
       </main>
     </Container>

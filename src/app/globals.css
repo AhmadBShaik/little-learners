@@ -13,3 +13,22 @@
   --laptop-width: 1440px;
   --desktop-width: 1920px;
 }
+.AccordionItem:has(> div[data-state="open"]),
+div:has(> div > .AccordionTrigger[data-state="open"]) {
+  @apply bg-white;
+}
+
+.AccordionTrigger[data-state="open"] > .AccordionStatus::after,
+.AccordionTrigger[data-state="open"] > * > .AccordionStatus::after {
+  @apply absolute left-2/4 top-[45%] -translate-x-[50%] -translate-y-[50%] text-[20px] content-["-"] laptop:text-[28px];
+}
+
+.AccordionTrigger[data-state="closed"] > .AccordionStatus::after,
+.AccordionTrigger[data-state="closed"] > * > .AccordionStatus::after {
+  @apply absolute left-2/4 top-2/4 -translate-x-[50%] -translate-y-[50%] text-[20px] content-["+"] laptop:text-[28px];
+}
+
+.AccordionTrigger[data-state="open"] > .QuestionContainer,
+div:has(> .AccordionTrigger[data-state="open"]) > * > * > .QuestionContainer {
+  @apply border-b-2 border-black;
+}
