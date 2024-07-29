@@ -3,6 +3,7 @@ import "./globals.css";
 import { outfit } from "@/fonts";
 import Header from "@/components/organisms/Header";
 import { cn } from "@/helpers/utils";
+import Footer from "@/components/molecules/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +22,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="relative flex flex-col">{children}</main>
-        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
