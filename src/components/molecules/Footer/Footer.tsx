@@ -30,6 +30,7 @@ function Footer({}: FooterProps) {
   const navigation = [
     {
       page: "Home",
+      link: "/",
       sections: [
         {
           name: "Features",
@@ -47,55 +48,58 @@ function Footer({}: FooterProps) {
     },
     {
       page: "About Us",
+      link: "/about-us",
       sections: [
         {
           name: "Our Mission",
-          link: "/about-us/#our-mission",
+          link: "/#our-mission",
         },
         {
           name: "Our Vision",
-          link: "/about-us/#our-vision",
+          link: "/#our-vision",
         },
 
         {
           name: "Awards and Recognitions",
-          link: "/about-us/#awards-and-recognitions",
+          link: "/#awards-and-recognitions",
         },
         {
           name: "History",
-          link: "/about-us/#history",
+          link: "/#history",
         },
 
         {
           name: "Teachers",
-          link: "/about-us/#teachers",
+          link: "/#teachers",
         },
       ],
     },
     {
       page: "Academics",
+      link: "/academics",
       sections: [
         {
           name: "Special Features",
-          link: "/academics/#special-features",
+          link: "/#special-features",
         },
         {
           name: "Gallery",
-          link: "/academics/#gallery",
+          link: "/#gallery",
         },
       ],
     },
 
     {
       page: "Contact Us",
+      link: "/contact-us",
       sections: [
         {
           name: "Information",
-          link: "/contact-us/#information",
+          link: "/#information",
         },
         {
           name: "Map & Direction",
-          link: "/contact-us/#map-and-direction",
+          link: "/#map-and-direction",
         },
       ],
     },
@@ -155,10 +159,12 @@ function Footer({}: FooterProps) {
                 key={item.page}
                 className="space-y-5 desktop:space-y-6 desktop:text-xl"
               >
-                <div className="font-semibold desktop:text-xl">{item.page}</div>
+                <div className="font-semibold desktop:text-xl">
+                  <Link href={item.link}>{item.page}</Link>
+                </div>
                 {item.sections.map((section) => (
                   <div key={section.name} className="space-y-[14px]">
-                    <Link href={section.link}>{section.name}</Link>
+                    <Link href={item.link + section.link}>{section.name}</Link>
                   </div>
                 ))}
               </div>
