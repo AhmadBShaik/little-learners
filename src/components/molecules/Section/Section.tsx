@@ -1,3 +1,4 @@
+import Badge from "@/components/atoms/Badge";
 import { raleway } from "@/fonts";
 import { cn } from "@/helpers/utils";
 import React from "react";
@@ -13,9 +14,7 @@ type SectionProps = {
 function Section({ intro, title, description, children, id }: SectionProps) {
   return (
     <section className="flex flex-col items-center" id={id}>
-      <div className="desktotp:px-[20px] desktotp:py-[10px] mb-[10px] w-fit rounded-lg border-2 border-black bg-white px-[14px] py-[8px] text-[14px] laptop:mb-[14px] laptop:text-[16px] desktop:mb-[19px] desktop:text-[18px]">
-        {intro}
-      </div>
+      <Badge text={intro} />
       <div
         className={cn(
           cn(
