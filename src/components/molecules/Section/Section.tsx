@@ -14,7 +14,9 @@ type SectionProps = {
 function Section({ intro, title, description, children, id }: SectionProps) {
   return (
     <section className="flex flex-col items-center" id={id}>
-      <Badge text={intro} />
+      <div className="mb-[10px] w-fit laptop:mb-[14px] desktop:mb-[19px]">
+        <Badge text={intro} />
+      </div>
       <div
         className={cn(
           cn(

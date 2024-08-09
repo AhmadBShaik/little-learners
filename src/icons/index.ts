@@ -8,3 +8,4 @@ export * from "./Users";
 export * from "./ArrowLeft";
 export * from "./ArrowRight";
 export * from "./Star";
+export * from "./UserGroup";
