@@ -5,37 +5,37 @@ import Section from "@/components/molecules/Section";
 function EventsAndCelebrations() {
   const events = [
     {
-      image: "",
+      image: "/assets/events-and-celebrations/Annual-Sports-Day.png",
       title: "Annual Sports Day",
       description:
         "A day filled with friendly competition, team spirit, and sportsmanship.",
     },
     {
-      image: "",
+      image: "/assets/events-and-celebrations/Cultural-Festivals.png",
       title: "Cultural Festivals",
       description:
         "Celebrations of diverse cultural festivals, promoting cultural exchange and appreciation.",
     },
     {
-      image: "",
+      image: "/assets/events-and-celebrations/Art-Exhibitions.png",
       title: "Art Exhibitions",
       description:
         "Showcasing our students' artistic talents through exhibitions and displays.",
     },
     {
-      image: "",
+      image: "/assets/events-and-celebrations/Science-Fair.png",
       title: "Science Fair",
       description:
         "A platform for budding scientists to present their innovative projects and experiments.",
     },
     {
-      image: "",
+      image: "/assets/events-and-celebrations/International-Day.png",
       title: "International Day",
       description:
         "A vibrant celebration of our diverse community, embracing cultures from around the world.",
     },
     {
-      image: "",
+      image: "/assets/events-and-celebrations/Graduation-Ceremony.png",
       title: "Graduation Ceremony",
       description:
         "A significant milestone as our Kindergarten students prepare to embark on their academic journey.",
@@ -49,12 +49,13 @@ function EventsAndCelebrations() {
       description="At Little Learners Academy, we celebrate every milestone and create cherished memories for our students. Throughout the year, we host a variety of events and celebrations that bring the entire school community together. Some of our memorable events include"
     >
       <Grid className="w-full gap-[40px] laptop:grid-cols-3 desktop:gap-y-[50px]">
-        {events.map((benefit) => (
+        {events.map((event, index) => (
           <EventCard
-            key={benefit.title}
-            title={benefit.title}
-            image={benefit.image}
-            description={benefit.description}
+            index={index}
+            key={event.title}
+            title={event.title}
+            image={event.image}
+            description={event.description}
           />
         ))}
       </Grid>
