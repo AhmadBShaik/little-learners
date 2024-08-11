@@ -23,6 +23,7 @@ function NavItems({}: Props) {
                 ? "bg-primary-75 hover:bg-primary-70"
                 : ""
             }
+            key={item.link}
           >
             {item.name}
           </NavItem>
