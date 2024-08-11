@@ -1,15 +1,16 @@
 import NavItem from "@/components/atoms/NavItem";
-import Menu from "@/icons/Menu";
+import NavMenu from "../NavMenu";
 
 type Props = {};
 
 function NavItems({}: Props) {
   const navItems = [
     { link: "/", name: "Home" },
-    { link: "/about-us", name: "About Us" },
-    { link: "/academics", name: "Academics" },
-    { link: "/admissions", name: "Admissions" },
+    // { link: "/about-us", name: "About Us" },
+    // { link: "/academics", name: "Academics" },
+    // { link: "/admissions", name: "Admissions" },
     { link: "/student-life", name: "Student Life" },
+    // { link: "/contact", name: "Contact" },
   ];
   return (
     <>
@@ -27,9 +28,7 @@ function NavItems({}: Props) {
           </NavItem>
         ))}
       </div>
-      <div className="bg-primary-95 px-[30px] py-[17px] laptop:hidden">
-        <Menu />
-      </div>
+      <NavMenu items={navItems} />
     </>
   );
 }
